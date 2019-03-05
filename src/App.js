@@ -4,22 +4,21 @@ import './App.css';
 
 class App extends Component {
   render() {
+    let data =['a','b','c'];
+    let mappedata=data.map ((item)=>{
+       return item +' ';
+    })
+    let data2=['lol1','lol2','lol3'];
+    let mappeddata2=data2.map((item)=>{
+       return item;
+    })
+    
+
     return (
       <div className="App">
-        <header className="App-header">
-        
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <ul>
-            <li> One </li>
-            <li> Two</li>
-            <li> Three</li>
-            </ul>
-          <p>This is new paragraph introduced </p>
-          <p>Change in master branch </p>
-        </header>
-      </div>
+       {mappedata}
+       {mappeddata2}
+      </div> 
     );
   }
 }
